@@ -7,6 +7,14 @@
 @import url(./testominals.css);
 @import url(./contact.css);
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* 
 ====================
 HEADER SECTION
@@ -15,11 +23,14 @@ HEADER SECTION
 
 .header {
   position: fixed;
-  width: 100%;
   padding-block: 1rem;
+  display: flex;
   justify-content: space-between;
+  padding-inline: 1rem;
   top: 0;
   left: 0;
+  right: 0;
+
   z-index: 999;
 }
 
@@ -84,7 +95,8 @@ Footer Section
   justify-content: space-between;
   background-color: var(--secondary-background-color);
   padding: 1rem 2rem;
-  max-width: 1600px;
+  width: 100%;
+  max-width: 1920px;
 }
 
 .footer .btn i {
